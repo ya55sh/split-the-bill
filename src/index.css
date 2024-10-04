@@ -1,13 +1,168 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+label,
+input {
+  font-family: monospace;
+  letter-spacing: 0.2px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input {
+  padding: 6px 6px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 6px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+h5 {
+  font-size: 14px;
+  font-weight: 300;
+  text-shadow: 0.5px 0.5px rgb(77, 78, 111);
+}
+
+select {
+  width: auto;
+  border: none;
+  height: 28px;
+  padding: 6px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+/* p {
+  font-size: 14px;
+} */
+
+ul {
+  list-style: none;
+}
+
+img {
+  border-radius: 10%;
+}
+
+button {
+  border: none;
+  height: 30px;
+  margin: 8px;
+  padding: 6px;
+  border-radius: 15%;
+  background-color: rgb(253, 152, 19);
+  box-shadow: 2px 2px black;
+  letter-spacing: 0.5px;
+  color: rgb(48, 48, 48);
+  font-weight: bold;
+  font-size: 12px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgba(51, 51, 51, 0.836);
+  color: white;
+}
+
+.app {
+  height: auto;
+  display: grid;
+  background-color: rgba(223, 223, 223, 0.781);
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  justify-items: center;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: rgb(143, 182, 88);
+}
+
+.grey {
+  color: grey;
+}
+
+.friend-list {
+  display: flex;
+  width: 400px;
+  flex-direction: column;
+  border-radius: 12px;
+  gap: 12px;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  padding: 8px;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.input-label {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.drop-down-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.label-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.add-friend {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.btn-show {
+  display: block;
+}
+
+.btn-hide {
+  display: none;
+}
+
+.bill-bar {
+  display: flex;
+  width: 400px;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.selected {
+  background-color: rgb(220 217 217);
 }
